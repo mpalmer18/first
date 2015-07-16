@@ -11,22 +11,6 @@
         <statement name="DO">
           <block type="movement_right" id="288"></block>
         </statement>
-        <next>
-          <block type="movement_forward" id="298">
-            <next>
-              <block type="controls_if" id="312" inline="false">
-                <value name="IF0">
-                  <block type="sensor_object" id="313">
-                    <field name="OBJECT">RIGHTFRONT</field>
-                  </block>
-                </value>
-                <statement name="DO0">
-                  <block type="movement_right" id="314"></block>
-                </statement>
-              </block>
-            </next>
-          </block>
-        </next>
       </block>
     </next>
   </block>
