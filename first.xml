@@ -17,7 +17,9 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="5"></block>
+      <block type="procedures_callnoreturn" id="53">
+        <mutation name="speed"></mutation>
+      </block>
     </statement>
     <next>
       <block type="movement_right" id="6">
@@ -47,7 +49,9 @@
                   </block>
                 </value>
                 <statement name="DO">
-                  <block type="movement_forward" id="13"></block>
+                  <block type="procedures_callnoreturn" id="54">
+                    <mutation name="speed"></mutation>
+                  </block>
                 </statement>
                 <next>
                   <block type="movement_right" id="14">
@@ -70,7 +74,9 @@
                           </block>
                         </value>
                         <statement name="DO">
-                          <block type="movement_forward" id="19"></block>
+                          <block type="procedures_callnoreturn" id="55">
+                            <mutation name="speed"></mutation>
+                          </block>
                         </statement>
                         <next>
                           <block type="robot_delay" id="20" inline="true">
@@ -98,7 +104,9 @@
                                   </block>
                                 </value>
                                 <statement name="DO">
-                                  <block type="movement_forward" id="26"></block>
+                                  <block type="procedures_callnoreturn" id="56">
+                                    <mutation name="speed"></mutation>
+                                  </block>
                                 </statement>
                                 <next>
                                   <block type="robot_delay" id="27" inline="true">
@@ -139,5 +147,23 @@
         </next>
       </block>
     </next>
+  </block>
+  <block type="procedures_defnoreturn" id="33" x="375" y="66">
+    <mutation></mutation>
+    <field name="NAME">speed</field>
+    <statement name="STACK">
+      <block type="movement_setmotors" id="34" inline="true">
+        <value name="BOTHMOVLEFT">
+          <block type="math_number" id="35">
+            <field name="NUM">75</field>
+          </block>
+        </value>
+        <value name="BOTHMOVRIGHT">
+          <block type="math_number" id="36">
+            <field name="NUM">100</field>
+          </block>
+        </value>
+      </block>
+    </statement>
   </block>
 </xml>
