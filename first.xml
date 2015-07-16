@@ -22,9 +22,16 @@
     <next>
       <block type="movement_right" id="403">
         <next>
-          <block type="movement_stop" id="413"></block>
+          <block type="robot_delay" id="429" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="436">
+                <field name="NUM">25</field>
+              </block>
+            </value>
+          </block>
         </next>
       </block>
     </next>
   </block>
+  <block type="movement_stop" id="413" x="44" y="219"></block>
 </xml>
