@@ -21,6 +21,9 @@
         <statement name="DO">
           <block type="movement_right" id="288"></block>
         </statement>
+        <next>
+          <block type="movement_stop" id="383"></block>
+        </next>
       </block>
     </next>
   </block>
