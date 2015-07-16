@@ -31,4 +31,7 @@
       </block>
     </next>
   </block>
+  <block type="controls_whileUntil" id="327" inline="false" x="1" y="253">
+    <field name="MODE">WHILE</field>
+  </block>
 </xml>
