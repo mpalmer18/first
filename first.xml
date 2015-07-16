@@ -29,7 +29,40 @@
               </block>
             </value>
             <next>
-              <block type="movement_stop" id="413"></block>
+              <block type="controls_whileUntil" id="437" inline="false">
+                <field name="MODE">UNTIL</field>
+                <value name="NUMBER">
+                  <block type="logic_compare" id="438" inline="true">
+                    <field name="OP">GT</field>
+                    <value name="A">
+                      <block type="math_number" id="439">
+                        <field name="NUM">25</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="sensor_object" id="440">
+                        <field name="OBJECT">LEFTFRONT</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="movement_forward" id="441"></block>
+                </statement>
+                <next>
+                  <block type="movement_right" id="442">
+                    <next>
+                      <block type="robot_delay" id="443" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="444">
+                            <field name="NUM">1500</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
             </next>
           </block>
         </next>
