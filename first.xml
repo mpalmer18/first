@@ -8,13 +8,7 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_rightmotor" id="114" inline="true">
-            <value name="MOVRIGHT">
-              <block type="math_number" id="121">
-                <field name="NUM">25</field>
-              </block>
-            </value>
-          </block>
+          <block type="movement_rightmotor" id="114" inline="true"></block>
         </statement>
         <next>
           <block type="movement_forward" id="137">
@@ -26,13 +20,7 @@
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="movement_rightmotor" id="152" inline="true">
-                    <value name="MOVRIGHT">
-                      <block type="math_number" id="153">
-                        <field name="NUM">25</field>
-                      </block>
-                    </value>
-                  </block>
+                  <block type="movement_rightmotor" id="152" inline="true"></block>
                 </statement>
               </block>
             </next>
