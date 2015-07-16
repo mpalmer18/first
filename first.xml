@@ -2,10 +2,20 @@
   <block type="movement_forward" id="237" x="-44" y="-4">
     <next>
       <block type="controls_whileUntil" id="244" inline="false">
-        <field name="MODE">WHILE</field>
+        <field name="MODE">UNTIL</field>
         <value name="NUMBER">
-          <block type="sensor_object" id="265">
-            <field name="OBJECT">RIGHTFRONT</field>
+          <block type="logic_compare" id="358" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="math_number" id="365">
+                <field name="NUM">25</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="sensor_object" id="373">
+                <field name="OBJECT">LEFTFRONT</field>
+              </block>
+            </value>
           </block>
         </value>
         <statement name="DO">
