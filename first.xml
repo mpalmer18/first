@@ -2,32 +2,31 @@
   <block type="movement_forward" id="237" x="-44" y="-4">
     <next>
       <block type="controls_whileUntil" id="244" inline="false">
-        <field name="MODE">WHILE</field>
+        <field name="MODE">UNTIL</field>
         <value name="NUMBER">
           <block type="sensor_object" id="265">
             <field name="OBJECT">RIGHTFRONT</field>
           </block>
         </value>
         <statement name="DO">
-          <block type="movement_right" id="288">
+          <block type="movement_right" id="288"></block>
+        </statement>
+        <next>
+          <block type="movement_forward" id="298">
             <next>
-              <block type="movement_forward" id="298">
-                <next>
-                  <block type="controls_if" id="312" inline="false">
-                    <value name="IF0">
-                      <block type="sensor_object" id="313">
-                        <field name="OBJECT">RIGHTFRONT</field>
-                      </block>
-                    </value>
-                    <statement name="DO0">
-                      <block type="movement_right" id="314"></block>
-                    </statement>
+              <block type="controls_if" id="312" inline="false">
+                <value name="IF0">
+                  <block type="sensor_object" id="313">
+                    <field name="OBJECT">RIGHTFRONT</field>
                   </block>
-                </next>
+                </value>
+                <statement name="DO0">
+                  <block type="movement_right" id="314"></block>
+                </statement>
               </block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
     </next>
   </block>
