@@ -1,28 +1,28 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="237" x="-44" y="-4">
-    <next>
-      <block type="controls_whileUntil" id="244" inline="false">
-        <field name="MODE">UNTIL</field>
-        <value name="NUMBER">
-          <block type="logic_compare" id="358" inline="true">
-            <field name="OP">GT</field>
-            <value name="A">
-              <block type="math_number" id="365">
-                <field name="NUM">25</field>
-              </block>
-            </value>
-            <value name="B">
-              <block type="sensor_object" id="373">
-                <field name="OBJECT">LEFTFRONT</field>
-              </block>
-            </value>
+  <block type="controls_whileUntil" id="244" inline="false" x="-45" y="30">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="logic_compare" id="358" inline="true">
+        <field name="OP">GT</field>
+        <value name="A">
+          <block type="math_number" id="365">
+            <field name="NUM">25</field>
           </block>
         </value>
-        <statement name="DO">
-          <block type="movement_right" id="288"></block>
-        </statement>
+        <value name="B">
+          <block type="sensor_object" id="373">
+            <field name="OBJECT">LEFTFRONT</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="393"></block>
+    </statement>
+    <next>
+      <block type="movement_right" id="403">
         <next>
-          <block type="movement_stop" id="383"></block>
+          <block type="movement_stop" id="413"></block>
         </next>
       </block>
     </next>
